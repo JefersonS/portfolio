@@ -1,13 +1,92 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  overflow-y: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.intro-header {
+  height: 40vh;
+  max-height: 40vh;
+}
+
+.intro-content {
+  height: 60vh;
+  max-height: 60vh;
+}
+
+.content-text {
+  color: #383838;
+  height: 50%;
+  max-height: 50%;
+  overflow-y: auto;
+}
+
+.follow-me-section {
+  padding-top: 10px;
+  height: 30%;
+  max-height: 30%;
+}
+
+.intro-footer-content {
+  color: #383838;
+  text-align: center;
+  height: 20%;
+  max-height: 20%;
+}
+
+.follow-me-section {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px 0px 0px;
+}
+
+.profile-picture {
+  margin: 0 auto;
+  max-height: 10vh;
+  border-radius: 50%;
+}
+
+.social-media-picture {
+  width: 3.5vh;
+  padding: 0px 10px 0px 10px;
+}
+
+a:visited {
+  color: #383838;
+}
+
+.followMeButtons {
+  padding-top: 10px;
+}
+
+/* mouse over link */
+.social-media-picture:hover {
+  width: 3.8vh;
+}
+
+.navigation-menu {
+  padding: 0px 10px 0 10px;
+}
+
+.navigation-link {
+  padding: 0px 10px 0 10px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.intro-header-text {
+  color: #383838;
+  padding-top: 15vh;
+  font-size: 85px;
+  text-align: center;
+}
+
+.content-text {
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+  line-height: 28px;
+  max-width: 65%;
+}
+
+.intro-line {
+  width: 30%;
 }
