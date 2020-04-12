@@ -1,30 +1,28 @@
 import React from 'react';
 import { NavigationMenu } from './navigationMenu';
 import { FollowMeButtons } from './followMeButtons';
-import profilePicture from '../images/intro-picture.jpg'
 
-export const Intro = () => {
+export const Intro = ({profile}) => {
   return (
     <div>
 
       <div className="intro-header">
         <div className="intro-header-text">
-          Jeferson Euclides
+          {profile.name}
         </div>
       </div>
 
       <div className="intro-content">
         <div className="content-text">
-          Hi there! My name is Jeferson Euclides, I'm a Software Engineer located in Brazil working sometimes as a freelancer, but mostly as a fulltime employee.
-          My career counts with experience in distributed and on-site teams, where the majority of the time was spent as a remote developer.  <br /><br />
-          I have a strong technical background in JavaScript and a core knowledge base in Node.js and AWS services; I also build frontend solutions using React or other frontend-based stacks using JS.
-          I define business logic and implement solutions that affect the availability, functionality and reliability of applications. Being highly versatile - learning quickly - and available to work in any time zone. <br /><br />
+          {profile.intro.map((paragraph, i) =>
+            <span key={i}>{paragraph} <br /><br /></span>
+          )}
         </div>
 
         <div className="follow-me-section">
-            <img className="profile-picture" src={profilePicture} alt="Jeferson Euclides"/> 
+            <img className="profile-picture" src={require(`../images/${profile.profilePicture}`)} alt={profile.name}/> 
           <div className="followMeButtons">
-            <FollowMeButtons />
+            <FollowMeButtons socialMedias={profile.socialMedias}/>
           </div>
         </div>
 
@@ -33,6 +31,7 @@ export const Intro = () => {
           <NavigationMenu />
         </div>
       </div>
+      
     </div>
   )
 }

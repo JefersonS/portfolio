@@ -1,0 +1,78 @@
+{
+  "profile": {
+    "name": "Jeferson Euclides",
+    "intro": [
+      "Hi there! My name is Jeferson Euclides, I'm a Software Engineer located in Brazil working sometimes as a freelancer, but mostly as a fulltime employee. My career counts with experience in distributed and on-site teams, where the majority of the time was spent as a remote developer.",
+      "I have a strong technical background in JavaScript and a core knowledge base in Node.js and AWS services; I also build frontend solutions using React or other frontend-based stacks using JS. I define business logic and implement solutions that affect the availability, functionality and reliability of applications. Being highly versatile - learning quickly - and available to work in any time zone."
+    ],
+    "profilePicture": "intro-picture.jpg",
+    "socialMedias": {
+      "linkedin": "https://linkedin.com/in/jefersoneuclides",
+      "github": "https://github.com/JefersonS",
+      "instagram": "https://instagram.com/jefersoneuclides"
+    }
+  },
+  "experiences": [  
+    {
+      "id": 1,
+      "start": "2019-09-01 00:00:00",
+      "end": "",
+      "jobTitle": ["Remote Software Engineer"],
+      "company": "Ubiminds",
+      "location": "Florianópolis, Brazil",
+      "description": [
+        "Remote Backend developer helping the development of mid-size education SaaS company based in NYC."
+      ],
+      "technologies": ["JavaScript (Node.js, React.js)", "Serverless (AWS):", "Lambda", "API Gateway", "Step Functions", "SQS", "Cloudwatch", "S3;", "MySQL", "Jest", "and others"]
+    },  
+    {
+      "id": 2,
+      "start": "2018-03-01 00:00:00",
+      "end": "2019-09-01 00:00:00",
+      "jobTitle": ["Remote Backend Developer"],
+      "company": "microapps sl",
+      "location": "Málaga, Spain",
+      "description": [
+        "Responsible for building and maintaining https://moonmail.io & https://monei.net. Main responsibilities are focused in Back End service development using AWS Serverless framework and NodeJS."
+      ],
+      "technologies": ["JavaScript (Node.js, React.js)", "Serverless (AWS):", "Lambda", "SNS", "SQS", "Kinesis","DynamoDB", "API Gateway","Step Functions","Cloudwatch", "S3", "AppSync","and others"]
+    },
+    {
+      "id": 3,
+      "start": "2016-12-01 00:00:00",
+      "end": "2018-01-01 00:00:00",
+      "jobTitle": ["Fullstack developer"],
+      "company": "We Dev Ideas",
+      "location": "Pouso Alegre, Brazil",
+      "description": [
+        "Full Stack JavaScript Developer working mainly with NodeJS and GraphQLJS. Development and maintenance of JavaScript APIs."
+      ],
+      "technologies": ["MongoDB", "Express.JS", "Node.JS", "Sequelize.JS", "JWT.JS", "AWS.JS", "Async.JS", "Gulp.JS", "Moment.JS", "Mongoose.JS", "NodeMailer.JS", "Multer.JS", "Passport.JS", "Request.JS", "PagSeguro API", "GraphQL.JS", "Stripe.JS", "Mocha.JS", "CHAI.JS", "NYC.JS", "Sinon.JS"]
+    },
+    {
+      "id": 4,
+      "start": "2015-09-01 00:00:00",
+      "end": "2016-12-01 00:00:00",
+      "jobTitle": ["Remote Backend Developer"],
+      "company": "Tyngu",
+      "location": "New York, USA",
+      "description": [
+        "Development and maintenance of Node.JS APIs migrated from PHP"
+      ],
+      "technologies": ["PostgreSQL", "Express.JS", "Node.JS", "Sequelize.JS", "JWT.JS", "AWS.JS", "Moment.JS", "Stripe.JS", "Mocha.JS", "CHAI.JS", "NYC.JS", "Sinon.JS"]
+    },
+    {
+      "id": 5,
+      "start": "2016-05-01 00:00:00",
+      "end": "2017-06-01 00:00:00",
+      "jobTitle": ["Fullstack developer"],
+      "company": "Bize Tecnologia Criativa",
+      "location": "Pouso Alegre, Brazil",
+      "description": [
+        "Web Developer in MEAN (MongoDB, ExpressJS, AngularJS, NodeJS). Responsible for the development and maintenance of web solutions.",
+        "Web Developer, but with more stuff"
+      ],
+      "technologies": ["MongoDB", "Express.JS", "Angular.JS", "Node.JS", "Sequelize.JS", "JWT.JS", "AWS.JS", "Async.JS", "Multer.JS", "Bower.JS", "Gulp.JS", "Moment.JS", "Mongoose.JS", "NodeMailer.JS", "Lodash.js", "AngularAria/Cookies/Routes/Ui-Ace/File-Upload", "Underscore.JS"]
+    }
+  ]
+}

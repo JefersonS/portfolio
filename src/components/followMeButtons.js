@@ -1,14 +1,15 @@
 import React from 'react';
-import linkedinImg from '../images/linkedin.svg'
-import githubImg from '../images/github.svg'
-import instagramImg from '../images/instagram.svg'
 
-export const FollowMeButtons = () => {
+export const FollowMeButtons = ({socialMedias}) => {
   return (
     <>
-      <a href="www.google.com"><img src={linkedinImg} className="social-media-picture" alt="LinkedIn"/></a>
-      <a href="www.google.com"><img src={githubImg} className="social-media-picture" alt="Github"/></a>
-      <a href="www.google.com"><img src={instagramImg} className="social-media-picture" alt="Instagram"/></a>
+      {Object.keys(socialMedias).map((key, i) =>
+        <span key={i}>
+          <a href={socialMedias[key]} target="_blank" rel="noopener noreferrer">
+            <img src={require(`../images/${key}.svg`)} className="social-media-picture" alt={key}/>
+          </a>
+        </span>
+      )}
     </>
   )
 }
