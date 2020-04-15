@@ -6,6 +6,8 @@ export const Intro = ({profile}) => {
   return (
     <div>
 
+      <NavigationMenu />
+
       <div className="intro-header">
         <div className="intro-header-text">
           {profile.name}
@@ -26,10 +28,6 @@ export const Intro = ({profile}) => {
           </div>
         </div>
 
-        <div className="intro-footer-content">
-          <hr className="intro-line"/>
-          <NavigationMenu />
-        </div>
       </div>
       
     </div>

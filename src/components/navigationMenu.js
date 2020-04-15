@@ -5,10 +5,13 @@ import {
 
 export const NavigationMenu = () => {
   return (
-    <div className="navigationMenu">
-      <Link to="/" className="navigation-link">Home</Link> |
-      <Link to="/experience" className="navigation-link">Experience</Link> |
-      <Link to="/contact" className="navigation-link">Contact</Link>
+    <div className="main-menu">
+      <div className="navigationMenu">
+        <Link to="/" className="navigation-link">Home</Link> |
+        <Link to="/experience" className="navigation-link">Experience</Link> |
+        <Link to="/contact" className="navigation-link">Contact</Link>
+      </div>
+      <hr className="intro-line"/>
     </div>
   );
 }

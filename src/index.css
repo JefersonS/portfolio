@@ -2,14 +2,65 @@ html {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
 }
 
+.main-menu {
+  color: #383838;
+  text-align: center;
+  height: 10vh;
+  max-height: 10vh;
+}
+
 .intro-header {
-  height: 40vh;
-  max-height: 40vh;
+  height: 20vh;
+  max-height: 20vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .intro-header {
+    height: 25vh;
+    max-height: 25vh;
+  }
 }
 
 .intro-content {
-  height: 60vh;
-  max-height: 60vh;
+  height: 70vh;
+  max-height: 70vh;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 800px) {
+  .intro-content {
+    display: contents;
+    height: 60vh;
+    max-height: 60vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .intro-content {
+    display: inherit;
+  }
+}
+
+.intro-header-text {
+  color: #383838;
+  font-size: 85px;
+  text-align: center;
+  padding-top: 2.2%;
+}
+
+@media only screen and (max-width: 800px) {
+  .intro-header-text {
+    font-size: 65px;
+    padding-top: 4%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .intro-header-text {
+    font-size: 60px;
+    padding-top: 0;
+  }
 }
 
 .content-text {
@@ -17,19 +68,24 @@ html {
   height: 50%;
   max-height: 50%;
   overflow-y: auto;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+  line-height: 28px;
+  max-width: 65%;
+}
+
+@media only screen and (max-width: 600px) {
+  .content-text {
+    height: 70%;
+    max-height: 70%;
+  }
 }
 
 .follow-me-section {
   padding-top: 10px;
   height: 30%;
   max-height: 30%;
-}
-
-.intro-footer-content {
-  color: #383838;
-  text-align: center;
-  height: 20%;
-  max-height: 20%;
 }
 
 .follow-me-section {
@@ -69,31 +125,17 @@ a:visited {
   padding: 0px 10px 0 10px;
   width: 100%;
   font-size: 18px;
-}
-
-.intro-header-text {
   color: #383838;
-  padding-top: 15vh;
-  font-size: 85px;
-  text-align: center;
-}
-
-@media only screen and (max-width: 600px) {
-  .intro-header-text {
-    padding-top: 8vh;
-  }
-}
-
-.content-text {
-  margin: 0 auto;
-  font-size: 20px;
-  text-align: center;
-  line-height: 28px;
-  max-width: 65%;
 }
 
 .intro-line {
   width: 30%;
+}
+
+@media only screen and (max-width: 800px) {
+  .intro-line {
+    width: 60%;
+  }
 }
 
 .experiences-container {
@@ -105,7 +147,19 @@ a:visited {
 }
 
 .experience-header {
-  padding: 80px 0 100px 0;
+  padding: 20px 0 100px 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .experience-header {
+    padding: 20px 0 80px 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .experience-header {
+    padding: 20px 0 60px 0;
+  }
 }
 
 .experience-header-text {
@@ -115,13 +169,19 @@ a:visited {
   font-size: x-large;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .experience-header-text {
     max-width: 80%;
   }
 }
 
 @media only screen and (max-width: 600px) {
+  .experience-header-text {
+    font-size: large;
+  }
+}
+
+@media only screen and (max-width: 800px) {
   .experiences-container {
     max-width: 80%;
   }
@@ -131,7 +191,7 @@ a:visited {
   width: 55%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .experience-container {
     width: 90%;
   }

@@ -2,17 +2,16 @@ import React from 'react'
 import { NavigationMenu } from './navigationMenu';
 import { Experience } from './experience';
 
-export const Experiences = ({ experiences }) => {
+export const Experiences = ({ experiences, intro }) => {
   return (
     <div>
-      <div className="intro-footer-content">
-        <NavigationMenu />
-        <hr className="intro-line"/>
-      </div>
+      <NavigationMenu />
+
       <div className="experience-header">
         <div className="experience-header-text">
-          I have experience with a handful of languages, like Python, Java and PHP. <br />
-          However my expertise alongside my professional experience lies on JavaScript, where I have built and delivered several applications throughout more than five years of experience.
+          {intro.map((paragraph, i) =>
+            <span key={i}>{paragraph} <br /></span>
+          )}
         </div>
       </div>
       <div className="experiences-container">
